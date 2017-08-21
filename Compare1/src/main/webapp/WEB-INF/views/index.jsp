@@ -34,7 +34,7 @@
                 
            <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav">
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Dropdown <span class="caret"></span></a>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Category <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                         
                         <c:forEach items="${categoryList}" var="category">
