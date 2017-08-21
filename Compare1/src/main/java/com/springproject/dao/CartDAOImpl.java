@@ -83,7 +83,7 @@ public class CartDAOImpl implements CartDAO{
 			return list.get(0);
 		}
 		return null;
-		//return (Cart)sessionFactory.getCurrentSession().get(Cart.class, id);
+		//return (Cart) sessionFactory.getCurrentSession().get(Cart.class, id);
 	}
 	
 	

@@ -39,7 +39,7 @@ public class CartController {
     {
     	int userId = (Integer) session.getAttribute("userid");
     	int q=1;
-    	if (cartDAO.getitem(id, userId) != null) {
+    	if  (cartDAO.getitem(id, userId) != null) {
 			Cart item = cartDAO.getitem(id, userId);
 			item.setQuantity(item.getQuantity() + q);
 			Product p = productDAO.getProduct(id);
