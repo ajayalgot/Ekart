@@ -57,6 +57,36 @@ public class CartDAOImpl implements CartDAO{
 
 	
 	
+	@Transactional
+	public void editCart(int id) {
+		sessionFactory.getCurrentSession().saveOrUpdate(id);
+		
+		
+	}
+	
+	@Transactional
+	public void deleteCart(int id) {
+		// TODO Auto-generated method stub
+
+		sessionFactory.getCurrentSession().delete(getCart(id));
+	}
+
+	@SuppressWarnings("unchecked")
+	@Transactional
+	public Cart getCart(int id) {
+		
+		String hql = "from"+" Cart"+" where id="+id;
+		@SuppressWarnings("rawtypes")
+		Query query = sessionFactory.getCurrentSession().createQuery(hql);
+		List<Cart> list = (List<Cart>) query.list();
+		if (list!= null && !list.isEmpty()) {
+			return list.get(0);
+		}
+		return null;
+		//return (Cart)sessionFactory.getCurrentSession().get(Cart.class, id);
+	}
+	
+	
 	/*@Autowired
 	SessionFactory sessionFactory;
 	
@@ -65,7 +95,6 @@ public class CartDAOImpl implements CartDAO{
 		this.sessionFactory=sessionFactory; 
 		
 	}
-
 	@Transactional
 	public boolean saveCart(Cart cart) {
 		int q=1;
@@ -76,23 +105,18 @@ public class CartDAOImpl implements CartDAO{
 		sessionFactory.getCurrentSession().saveOrUpdate(cart);
 		return true;
 	}
-
 	public List getAllCartDetails() {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
 	public List<Cart> list() {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
 	public List getCartByProduct(int Productid) {
 		
 		// TODO Auto-generated method stub
 		return sessionFactory.getCurrentSession().createQuery("from Product where id="+Productid).list();
 	}
-
 	
-
 */}
