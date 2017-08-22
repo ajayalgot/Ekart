@@ -1,6 +1,5 @@
 package com.springproject.controller;
 
-
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,7 +38,7 @@ public class CartController {
     {
     	int userId = (Integer) session.getAttribute("userid");
     	int q=1;
-    	if  (cartDAO.getitem(id, userId) != null) {
+    	if (cartDAO.getitem(id, userId) != null) {
 			Cart item = cartDAO.getitem(id, userId);
 			item.setQuantity(item.getQuantity() + q);
 			Product p = productDAO.getProduct(id);
@@ -48,7 +47,7 @@ public class CartController {
 			model.addAttribute("message", p.getProductName() +"is already exist");
 			item.setSubTotal(item.getProductprice() + (q*p.getPrice()));
 			cartDAO.saveProductToCart(item);
-			return "ProductList";
+			return "Productlist";
 		} else {
 			Cart item = new Cart();
 			Product p = productDAO.getProduct(id);
@@ -67,10 +66,11 @@ public class CartController {
     }
 
 	@RequestMapping("/cart")
-    public String CartDetails(Model model)   {
+    public String CartDetails(HttpSession session,Model model)   {
 		Cart cd = new Cart();
-		
-		model.addAttribute("cartList", cartDAO.getAllCartDetails());
+		int userId = (Integer) session.getAttribute("userid");
+	model.addAttribute("userid", userId);
+		model.addAttribute("cartList", cartDAO.getCartByUser(userId));
 		return "CartDetails";
     	
     }
@@ -96,4 +96,4 @@ public class CartController {
 		return "redirect:/cart.do"+id;
 	}
 	
-}
+	}

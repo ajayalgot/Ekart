@@ -79,9 +79,12 @@
     <div class="row">
         <div class="col-md-4">
             <div class="thumbnail"><img src="<c:url value="/resources/assets/img/nokia-5.jpg" />">
+
                 <div class="caption">
                     <h3>nokia 5</h3>
-                    <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                    <input type="number">
+                    <button class="btn btn-default" type="button">AddToCart </button>
+                    <p> </p>
                 </div>
             </div>
         </div>
@@ -89,7 +92,9 @@
             <div class="thumbnail"><img src="<c:url value="/resources/assets/img/nokia).jpg"/>">
                 <div class="caption">
                     <h3>nokia 6</h3>
-                    <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                   
+                    <button class="btn btn-default" type="button">AddToCart </button>
+                    <p> </p>
                 </div>
             </div>
         </div>
@@ -97,7 +102,38 @@
             <div class="thumbnail"><img src="<c:url value="/resources/assets/img/mac 1.jpg"/>">
                 <div class="caption">
                     <h3>mac pro</h3>
-                    <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                   
+                    <button class="btn btn-default" type="button">AddToCart </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="thumbnail"><img src="<c:url value="/resources/assets/img/fitbitband.jpg"/>">
+                <div class="caption">
+                    <h3>smart watch</h3>
+                   
+                    <button class="btn btn-default" type="button">AddToCart </button>
+                    <p> </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="thumbnail"><img src="<c:url value="/resources/assets/img/oneplus5.jpg"/>">
+                <div class="caption">
+                    <h3>nokia 6</h3>
+                    
+                    <button class="btn btn-default" type="button">AddToCart </button>
+                    <p> </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="thumbnail"><img src="<c:url value="/resources/assets/img/i smart.jpg"/>">
+                <div class="caption">
+                    <h3>mac pro</h3>
+                          <button class="btn btn-default" type="button">AddToCart </button>
                 </div>
             </div>
         </div>
