@@ -59,6 +59,7 @@
     </nav>
     <div class="carousel slide" data-ride="carousel" id="carousel-1">
         <div class="carousel-inner" role="listbox">
+        
             <div class="item"><img src="<c:url value="/resources/assets/img/mac 1.jpg"/>" alt="Slide Image">
                 <div class="carousel-caption">
                     <h2 class="text-center show">Mac Pro </h2>
@@ -82,8 +83,8 @@
 
                 <div class="caption">
                     <h3>nokia 5</h3>
-                    
-                    <button class="btn btn-default" type="button">AddToCart </button>
+                   
+                    <a href="http://localhost:8080/Compare1/cart" class="btn btn-default" type="button">AddToCart</a>     
                     <p> </p>
                 </div>
             </div>
