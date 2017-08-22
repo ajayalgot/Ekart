@@ -82,7 +82,7 @@
 
                 <div class="caption">
                     <h3>nokia 5</h3>
-                    <input type="number">
+                    
                     <button class="btn btn-default" type="button">AddToCart </button>
                     <p> </p>
                 </div>
@@ -112,7 +112,7 @@
         <div class="col-md-4">
             <div class="thumbnail"><img src="<c:url value="/resources/assets/img/fitbitband.jpg"/>">
                 <div class="caption">
-                    <h3>smart watch</h3>
+                    <h3>fitbit band</h3>
                    
                     <button class="btn btn-default" type="button">AddToCart </button>
                     <p> </p>
@@ -122,7 +122,7 @@
         <div class="col-md-4">
             <div class="thumbnail"><img src="<c:url value="/resources/assets/img/oneplus5.jpg"/>">
                 <div class="caption">
-                    <h3>nokia 6</h3>
+                    <h3>one plus5</h3>
                     
                     <button class="btn btn-default" type="button">AddToCart </button>
                     <p> </p>
@@ -132,7 +132,7 @@
         <div class="col-md-4">
             <div class="thumbnail"><img src="<c:url value="/resources/assets/img/i smart.jpg"/>">
                 <div class="caption">
-                    <h3>mac pro</h3>
+                    <h3>i watch</h3>
                           <button class="btn btn-default" type="button">AddToCart </button>
                 </div>
             </div>
@@ -143,7 +143,7 @@
             <div class="col-md-4 col-sm-6 footer-navigation">
                 <h2><a class="text-info" href="#">E K A R T</a></h2>
                 <p class="links"><a href="#">Home</a><strong> · </strong><a href="#">Blog</a><strong> · </strong><a href="#">Pricing</a><strong> · </strong><a href="#">About</a><strong> · </strong><a href="#">Faq</a><strong> · </strong><a href="#">Contact</a></p>
-                <p class="company-name">Company Name © 2015 </p>
+                <p class="company-name">E K A R T © 2015 </p>
             </div>
             <div class="col-md-4 col-sm-6 footer-contacts">
                 <div><span class="fa fa-map-marker footer-contacts-icon"> </span>
@@ -153,13 +153,13 @@
                     <p class="footer-center-info email text-left"> +91 999999999</p>
                 </div>
                 <div><i class="fa fa-envelope footer-contacts-icon"></i>
-                    <p> <a href="#" target="_blank">support@company.com</a></p>
+                    <p> <a href="#" target="_blank">support@ekart.com</a></p>
                 </div>
             </div>
             <div class="clearfix visible-sm-block"></div>
             <div class="col-md-4 footer-about">
                 <h4>About the company</h4>
-                <p> Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+                <p> established in 2016 to serve better products in ekart and fulfill customer dreams.
                 </p>
                 <div class="social-links social-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-github"></i></a></div>
             </div>
